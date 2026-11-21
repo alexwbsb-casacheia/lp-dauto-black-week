@@ -605,12 +605,11 @@ fbq('track','PageView');
 
 <a class="floating" href="https://wa.me/556199534438?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20da%20Black%20Week%20DAUTO%20Tintas.%20Quero%20falar%20com%20o%20time%20do%20Ismael%20e%20conhecer%20as%20ofertas." target="_blank" rel="noopener" aria-label="Falar com o time DAUTO pelo WhatsApp">☏ FALAR COM O TIME DAUTO</a>
 <script>
-/* Rastreio: clique em qualquer botão do WhatsApp = evento Contact (e Lead) no Pixel */
+/* Rastreio: clique em qualquer botão do WhatsApp = evento Lead no Pixel */
 document.addEventListener('click',function(e){
   var a=e.target.closest&&e.target.closest('a[href*="wa.me"]');
   if(!a||!window.fbq)return;
   var p={content_name:'Black Week DAUTO 2026',content_category:'WhatsApp'};
-  fbq('track','Contact',p);
   fbq('track','Lead',p);
 },true);
 </script>
